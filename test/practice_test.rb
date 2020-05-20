@@ -26,6 +26,14 @@ class PracticeTest < MiniTest::Test
     assert_equal expected, practice.get_names
   end
 
+  def test_it_can_get_the_name_and_variations_of_any_number_hexagram
+    practice = Practice.new(@hexagrams)
+
+    expected = {"Hexagram 1" => ["Creative Heaven", "Force", "Strong Action", "The Key"]}
+
+    assert_equal expected, practice.get_names_by_number(1)
+  end
+
   # It will be much easier to write your tests above this setup method!
   # Look in the util folder if you need another way to visualize these!
   def setup
