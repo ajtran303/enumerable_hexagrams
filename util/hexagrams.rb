@@ -389,4 +389,4 @@ hexagrams = [
   }
 ]
 
-ap hexagrams
+ap hexagrams.sample
