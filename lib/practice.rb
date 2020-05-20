@@ -21,4 +21,12 @@ class Practice
       }
   end
 
+  def get_names_by_number(hexagram_number)
+    { "Hexagram #{hexagram_number}" =>
+        [ @hexagrams[hexagram_number-1][:name],
+        @hexagrams[hexagram_number-1][:variations] ].flatten!
+      }
+  end
+
+
 end
