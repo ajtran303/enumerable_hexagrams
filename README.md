@@ -6,13 +6,28 @@ Navigating through and building data structures of nested collections can be tri
 
 This project provides a concrete example to practice navigating and manipulating data structures.
 
-## How to start:
+## How to Setup:
 
-First, look through the data set (see: "What's in that util folder?" below).
+Clone down this repo:
 
-As you are exploring the data, imagine what kind of information you want to retrieve.
+`$ git clone git@github.com:ajtran303/enumerable_hexagrams.git
+`
 
-Come up with your own "word problem" to solve as a "coding problem."
+If you don't already have it, install MiniTest and awesome_print:
+
+`$ gem install minitest`
+
+`$ gem install awesome_print`
+
+## How to Start:
+
+First, explore the data:
+
+`$ ruby util/hexagrams.rb`
+
+As you are exploring, start imagining what kind of information you want to retrieve.
+
+Try to come up with your own "word problem" to solve as a "coding problem."
 
 By thinking this way, you can come up with your own interaction patterns to explore the hexagrams and practice using your nested collections skills.
 
@@ -26,27 +41,11 @@ By thinking this way, you can come up with your own interaction patterns to expl
 
 ## How to practice:
 
-Clone down this repo:
-
-`$ git clone git@github.com:ajtran303/enumerable_hexagrams.git
-`
-
-If you don't already have it, install MiniTest and awesome_print:
-
-`$ gem install minitest`
-
-`$ gem install awesome_print`
-
-
 Run the test file from the **root directory** of this project:
 
 `$ ruby test/practice_test.rb`
 
 Open your text editor and hack away with Test-Driven Development!
-
-First, write your tests based on the interaction pattern that you came up with.
-
-Then, build methods in your Practice class to pass your tests.
 
 There is one example to get started, given the user story:
 
@@ -64,12 +63,6 @@ end
 
 ## What's in that util folder?
 
-The `hexagrams.rb` utility is a stand-alone project [with its own repository.](https://github.com/ajtran303/hexagrams)
-
 I include it to to provide an additional way to visualize the data set with the `awesome_print` gem. I think the labels and indentation make a big difference.
 
-`$ ruby util/ap_hexagrams`
-
-You will see something like this:
-
-<img width="522" alt="ap_hexagrams" src="https://user-images.githubusercontent.com/31839316/82480970-d607eb00-9a91-11ea-9492-6ef084540009.png">
+The `hexagrams.rb` utility is a stand-alone project [with its own repository.](https://github.com/ajtran303/hexagrams)
