@@ -10,7 +10,7 @@ This project provides a concrete example to practice navigating and manipulating
 
 Clone down this repo:
 
-`$ git clone git@github.com:ajtran303/enumerable_hexagrams.git
+`$ git clone https://github.com/ajtran303/enumerable_hexagrams.git
 `
 
 If you don't already have it, install MiniTest and awesome_print:
