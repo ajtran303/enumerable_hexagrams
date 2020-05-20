@@ -6,7 +6,7 @@ Navigating through and building data structures of nested collections can be tri
 
 This project provides a concrete example to practice navigating and manipulating data structures.
 
-## How to Setup:
+## How to setup:
 
 Clone down this repo:
 
@@ -19,7 +19,7 @@ If you don't already have it, install MiniTest and awesome_print:
 
 `$ gem install awesome_print`
 
-## How to Start:
+## How to start:
 
 First, explore the data:
 
