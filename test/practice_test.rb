@@ -18,13 +18,6 @@ class PracticeTest < MiniTest::Test
     assert_equal expected, practice.get_numbers
   end
 
-  def test_it_can_get_a_labeled_list_of_all_the_names
-    practice = Practice.new(@hexagrams)
-
-    expected = {"names" => ["Creative Heaven", "Receptive Earth", "Difficulty at the Beginning", "Youthful Folly", "Waiting", "Conflict", "The Army", "Holding Together", "Small Taming", "Treading", "Peace", "Standstill", "Fellowship", "Great Possession", "Modesty", "Enthusiasm", "Following", "Work on the Decayed", "Approach", "Contemplation", "Biting Through", "Grace", "Splitting Apart", "Return", "Innocence", "Great Taming", "Jaws", "Great Preponderance", "The Abysmal Water", "Clinging Fire", "Influence", "Persevering", "Retiring", "Great Power", "Progress", "Darkening of the Light", "The Family", "Opposition", "Obstruction", "Deliverance", "Decrease", "Increase", "Breakthrough", "Coming to Meet", "Gathering Together", "Pushing Upward", "Oppression", "The Well", "Revolution", "The Cauldron", "The Arousing Thunder", "The Keeping Still Mountain", "Development", "The Marrying", "Abundance", "The Wanderer", "The Gentle Wind", "The Joyous Lake", "Dispersion", "Limitation", "Inner Truth", "Small Preponderance", "After Completion", "Before Completion"] }
-
-    assert_equal expected, practice.get_names
-  end
 
   def test_it_can_get_the_name_and_variations_of_any_number_hexagram
     practice = Practice.new(@hexagrams)
@@ -32,6 +25,20 @@ class PracticeTest < MiniTest::Test
     expected = {"Hexagram 1" => ["Creative Heaven", "Force", "Strong Action", "The Key"]}
 
     assert_equal expected, practice.get_names_by_number(1)
+
+    expected = {"Hexagram 8" => ["Holding Together", "Grouping", "Alliance"]}
+
+    assert_equal expected, practice.get_names_by_number(8)
+  end
+
+  def test_it_can_get_a_labeled_list_of_all_the_names
+    practice = Practice.new(@hexagrams)
+    # require "pry"; binding.pry
+    # pry => @hexagrams.map {|hexagram| hexagram[:name]}
+    # Copy the array from pry instead of typing it out!
+    expected = {"names" => ["Creative Heaven", "Receptive Earth", "Difficulty at the Beginning", "Youthful Folly", "Waiting", "Conflict", "The Army", "Holding Together", "Small Taming", "Treading", "Peace", "Standstill", "Fellowship", "Great Possession", "Modesty", "Enthusiasm", "Following", "Work on the Decayed", "Approach", "Contemplation", "Biting Through", "Grace", "Splitting Apart", "Return", "Innocence", "Great Taming", "Jaws", "Great Preponderance", "The Abysmal Water", "Clinging Fire", "Influence", "Persevering", "Retiring", "Great Power", "Progress", "Darkening of the Light", "The Family", "Opposition", "Obstruction", "Deliverance", "Decrease", "Increase", "Breakthrough", "Coming to Meet", "Gathering Together", "Pushing Upward", "Oppression", "The Well", "Revolution", "The Cauldron", "The Arousing Thunder", "The Keeping Still Mountain", "Development", "The Marrying", "Abundance", "The Wanderer", "The Gentle Wind", "The Joyous Lake", "Dispersion", "Limitation", "Inner Truth", "Small Preponderance", "After Completion", "Before Completion"] }
+
+    assert_equal expected, practice.get_names
   end
 
   # It will be much easier to write your tests above this setup method!
