@@ -61,6 +61,8 @@ def test_it_can_get_a_labeled_list_of_all_the_numbers
 end
 ```
 
+If you need more ideas on how to get started, see the [practice branch](https://github.com/ajtran303/enumerable_hexagrams/compare/practice) for additional tests and methods.
+
 ## What's in that util folder?
 
 I include it to to provide an additional way to visualize the data set with the `awesome_print` gem. I think the labels and indentation make a big difference.
